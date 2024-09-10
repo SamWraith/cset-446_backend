@@ -5,6 +5,6 @@ services:
       - ./:/app:ro
       - /app/node_modules
     environment:
-      - NODE_ENV=development
+      - NODE_ENV = development
     
     command: npm run dev
