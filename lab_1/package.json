@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -L index.js",
+    "dev": "nodemon index.js",
     "prod": "node index.js",
     "docker:dev": "docker-compose -f docker-compose.yaml -f docker-compose.dev.yaml up --build -d"
   },
