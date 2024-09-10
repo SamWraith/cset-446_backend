@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -L index.js",
+    "prod": "node index.js",
     "docker": "docker-compose up -d"
   },
   "keywords": [],
