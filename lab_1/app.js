@@ -7,14 +7,16 @@ dotenv.config({
 });
 const app = express();
 
+app.use(express.json());
+
 app.get('/', (req, res) => {
     res.send("<h1>Hello World!!!</h1>");
 });
 
-// ! Import routes
 
+// ! Import routes
 import taskRouter from './routes/task.routes.js';
 
-app.use("api/v1/task", taskRouter);
+app.use("/api/v1/tasks", taskRouter);
 
 export {app};
