@@ -12,6 +12,7 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=root
     volumes:
-      - mondo-db:/data/db
+      - mongo-db:/data/db
+
 volumes:
   mongo-db:
