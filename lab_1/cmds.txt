@@ -1,0 +1,27 @@
+ docker-compose -f compose.yaml -f docker-compose.dev.yaml up --build -d
+  docker-compose -f compose.yaml -f docker-compose.dev.yaml down
+
+ npm i -D nodemon    
+
+ RUN if [ condition ]; then \
+       echo "xyz"; \
+    else \
+       echo "abc"; \
+    fi
+
+
+P7-Introduction to MongoDB with Docker | Setup MongoDB Container | Zero to Hero in DevOps
+cmds
+mongo:
+    image: mongo
+    environment:
+        - MONGO_INITDB_ROOT_USERNAME=root
+        - MONGO_INITDB_ROOT_PASSWORD=root
+++trick
+docker exec -it retail-mongo-1 /bin/mongsh -u "root" -p "root"
+
+mongosh -u "root" -p "root"
+show dbs
+use crud_db
+db.createCollection("employees");
+show collections
