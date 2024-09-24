@@ -16,7 +16,9 @@ app.get('/', (req, res) => {
 
 // ! Import routes
 import taskRouter from './routes/task.routes.js';
+import userRouter from './routes/user.routes.js';
 
 app.use("/api/v1/tasks", taskRouter);
+app.use("/api/v1/users", userRouter);
 
 export {app};
